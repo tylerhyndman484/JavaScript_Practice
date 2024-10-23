@@ -25,3 +25,58 @@ console.log(celsiusToKelvin(45));
 
 
 // Temperature Convertor //
+
+
+// Sleep Debt Caluclator //
+
+
+
+const getSleepHours = (day) => {
+    switch (day) {
+      case 'monday':
+        return 6;
+      case 'tuesday':
+        return 6;
+      case 'wednesday':
+        return 6;
+      case 'thursday':
+        return 6;
+      case 'friday':
+        return 6;
+      case 'saturday':
+        return 7;
+      case 'sunday':
+        return 7;
+    }
+  }
+  
+  const getActualSleepHours = () => {
+    const sleepHours = getSleepHours('monday') 
+     + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday') + getSleepHours('sunday');
+  
+    return sleepHours;
+  }
+  
+  const getIdealSleepHours = () => {
+    const idealHours = 8;
+    return idealHours * 7;
+  }
+  
+  
+  const calculateSleepDebt = () => {
+    const actualSleepHours = getActualSleepHours();
+    const idealSleepHours = getIdealSleepHours();
+    if (actualSleepHours === idealSleepHours) {
+      console.log("User got the perfect amount of sleep");
+    } else if (actualSleepHours > idealSleepHours) {
+      console.log(`User got more sleep than needed. User is over ${actualSleepHours - idealSleepHours} hours.`);
+    } else if (actualSleepHours < idealSleepHours) {
+      console.log(`User should get some rest. User is under their ideal sleep goal by ${idealSleepHours - actualSleepHours} hours.`);
+    } else {
+      return;
+    }
+  }
+  
+  calculateSleepDebt();
+  
+// Sleep Debt Calculator //  
