@@ -5,6 +5,4 @@ function numberIncreaser(number) {
     return number;
 }
 
-
-
-console.log(numberIncreaser(number));
+console.log(numberIncreaser(3));
