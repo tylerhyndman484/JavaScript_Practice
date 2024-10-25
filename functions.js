@@ -80,3 +80,5 @@ const getSleepHours = (day) => {
   calculateSleepDebt();
   
 // Sleep Debt Calculator //  
+
+// Practiced Code Challenges on Codecademy for functions //
