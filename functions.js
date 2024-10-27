@@ -31,7 +31,7 @@ console.log(celsiusToKelvin(45));
 
 
 
-const getSleepHours = (day) => {
+const getSleepHours = (day) => { // function that uses a switch statement to pass in each day of the week to associate with the number of hours that is slept per night
     switch (day) {
       case 'monday':
         return 6;
@@ -50,20 +50,20 @@ const getSleepHours = (day) => {
     }
   }
   
-  const getActualSleepHours = () => {
+  const getActualSleepHours = () => { // function that adds all the hours of sleep you get per night to get the weekly total
     const sleepHours = getSleepHours('monday') 
      + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday') + getSleepHours('sunday');
   
     return sleepHours;
   }
   
-  const getIdealSleepHours = () => {
+  const getIdealSleepHours = () => { // getting the amount of hours you would like to sleep per week
     const idealHours = 8;
     return idealHours * 7;
   }
   
   
-  const calculateSleepDebt = () => {
+  const calculateSleepDebt = () => { // this function  uses the past 2 functions to calculate if the number of hours you actually slept are the same, more, or less the your ideal sleep number; then returns a statement //
     const actualSleepHours = getActualSleepHours();
     const idealSleepHours = getIdealSleepHours();
     if (actualSleepHours === idealSleepHours) {
