@@ -1,4 +1,4 @@
-// For loops //   // while loops //   // do... while lopps //
+// For loops //  // for... of loops //  // while loops //   // do... while lopps //
 
 // Whale Project // 
 
