@@ -34,3 +34,4 @@ let misspelledWord = 'beautifull';
 let badWord = 'freaking';
 
 // practicing on codecademy //
+// practicing on codecademy //
