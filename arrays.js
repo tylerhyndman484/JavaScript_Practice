@@ -35,3 +35,4 @@ let badWord = 'freaking';
 
 // practicing on codecademy //
 // practicing on codecademy //
+// practicing on codecadey //
