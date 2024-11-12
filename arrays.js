@@ -114,3 +114,29 @@ console.log(story);
 
 
 // story project //
+
+// Challenge Question //
+
+// Write your code here:
+
+const sentence = ['sense.', 'make', 'all', 'will', 'This'];
+
+
+function reverseArray(array) {
+  array = sentence;
+  for (let i = array.length - 1; i >= 0; i--) {
+    return (array[i]);
+  }
+}
+
+
+console.log(reverseArray(sentence));
+
+
+// When you're ready to test your code, uncomment the below and run:
+/* 
+const sentence = ['sense.','make', 'all', 'will', 'This'];
+
+console.log(reverseArray(sentence)) 
+// Should print ['This', 'will', 'all', 'make', 'sense.'];
+*/
