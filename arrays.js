@@ -119,20 +119,19 @@ console.log(story);
 
 // Write your code here:
 
-const sentence = ['sense.', 'make', 'all', 'will', 'This'];
-
+// Write your code here:
+let sentence = ['sense.', 'make', 'all', 'will', 'This'];
 
 function reverseArray(array) {
-  array = sentence;
+  let sentence = ['sense.', 'make', 'all', 'will', 'This'];
   for (let i = array.length - 1; i >= 0; i--) {
-    return (array[i]);
+  sentence = array.push([i]);
+
   }
+  return sentence;
 }
 
-
 console.log(reverseArray(sentence));
-
-
 // When you're ready to test your code, uncomment the below and run:
 /* 
 const sentence = ['sense.','make', 'all', 'will', 'This'];
