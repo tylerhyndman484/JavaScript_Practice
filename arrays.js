@@ -118,17 +118,15 @@ console.log(story);
 // Challenge Question //
 
 // Write your code here:
-
-// Write your code here:
 let sentence = ['sense.', 'make', 'all', 'will', 'This'];
 
 function reverseArray(array) {
-  let sentence = ['sense.', 'make', 'all', 'will', 'This'];
-  for (let i = array.length - 1; i >= 0; i--) {
-  sentence = array.push([i]);
 
+  let reversedArray = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    reversedArray.push(array[i]);
   }
-  return sentence;
+  return reversedArray;
 }
 
 console.log(reverseArray(sentence));
@@ -139,3 +137,22 @@ const sentence = ['sense.','make', 'all', 'will', 'This'];
 console.log(reverseArray(sentence)) 
 // Should print ['This', 'will', 'all', 'make', 'sense.'];
 */
+
+
+
+// Write your code here:
+
+const aliens = ["Blorgous", "Glamyx", "Wegord", "SpaceKing"];
+
+function greetAliens(array) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(`Oh powerful ${array[i]}, we humans offer our unconditional surrender!`);
+  }
+  return;
+}
+
+// When you're ready to test your code, uncomment the below and run:
+
+greetAliens(aliens);
+
+
